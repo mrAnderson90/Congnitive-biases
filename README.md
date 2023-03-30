@@ -1,17 +1,19 @@
-# HTML/CSS Boilerplate
+# Music-box Project
 
-## Setup
+## _Follow the link to see deploy:_
 
-```bash
-make install
-```
+[Main page]()
 
-## Run lint
+[Artist page]()
 
-```bash
-make lint
-```
-
+## The following technologies were used:
+- HTML5
+- CSS3
+- Flex
+- Pug
+- SASS
+- Gulp
+- Bootstrap
 ---
 
 [![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://hexlet.io?utm_source=github&utm_medium=link&utm_campaign=html-boilerplate)
