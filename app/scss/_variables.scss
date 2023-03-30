@@ -1,0 +1,27 @@
+// colors
+$white: #fff;
+$white-50: #d7ccc0;
+$bright: #f5f4f0;
+$primary: #fe8a02;
+$primary-dark: #42413c;
+$dark: #2a2626;
+$dark-50: #908d8b;
+$brown: #b09a81;
+$blue: #1085c5;
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+// container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1110px,
+);
