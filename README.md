@@ -2,9 +2,7 @@
 
 ## _Follow the link to see deploy:_
 
-[Main page]()
-
-[Artist page]()
+[Main page](https://productive-balloon.surge.sh/)
 
 ## The following technologies were used:
 - HTML5
