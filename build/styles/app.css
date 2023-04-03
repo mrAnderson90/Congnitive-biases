@@ -9947,6 +9947,8 @@ textarea.form-control-lg {
   text-decoration: none;
 }
 .navigation-card a h3, .navigation-card a .h3 {
+  font-size: 64px;
+  line-height: 1;
   color: #42413c;
   margin-bottom: 2.5rem;
 }
