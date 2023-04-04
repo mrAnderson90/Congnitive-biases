@@ -9925,19 +9925,17 @@ textarea.form-control-lg {
 }
 
 .navigation {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
   row-gap: 20px;
   padding-top: 200px;
   padding-bottom: 100px;
 }
-.navigation-title {
-  width: 350px;
+.navigation > * {
+  max-width: 350px;
 }
 .navigation-card {
-  width: 350px;
   padding: 1.5rem;
   background-color: #f5f4f0;
 }
