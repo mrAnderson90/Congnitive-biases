@@ -20,6 +20,7 @@ h1,
 h2,
 h3,
 h4 {
+	margin: 0;
 	font-weight: 400;
 	line-height: 1.2em;
 	font-family: "Neucha", cursive;
@@ -116,4 +117,8 @@ h4 {
 	height: 525px;
 	width: 1082.81px;
 	z-index: -1;
+}
+
+.f-18 {
+	font-size: 18px;
 }

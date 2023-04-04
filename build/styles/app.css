@@ -10007,6 +10007,61 @@ textarea.form-control-lg {
   column-gap: 30px;
 }
 
+.subscribe {
+  display: flex;
+  align-items: center;
+  column-gap: 122px;
+  padding: 0 55px;
+}
+.subscribe-title {
+  flex: 1 1 50%;
+  margin: 55px 0;
+}
+.subscribe-form {
+  flex: 1 1 50%;
+}
+.subscribe-form * {
+  border-radius: 0;
+}
+.subscribe-form input {
+  padding: 0 15px;
+}
+.subscribe .send {
+  position: relative;
+  height: 50px;
+  width: 70px;
+}
+.subscribe .send::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-image: url("../images/send.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(-50%, -50%);
+  content: "";
+}
+.subscribe-rules {
+  font-size: 12px;
+}
+.subscribe-rules a {
+  color: inherit;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  margin-top: 60px;
+  font-size: 14px;
+}
+.info a {
+  color: #1085c5;
+}
+
 body > *,
 p {
   margin: 0;
@@ -10032,6 +10087,7 @@ h3,
 .h3,
 h4,
 .h4 {
+  margin: 0;
   font-weight: 400;
   line-height: 1.2em;
   font-family: "Neucha", cursive;
@@ -10143,4 +10199,8 @@ h4, .h4 {
   height: 525px;
   width: 1082.81px;
   z-index: -1;
+}
+
+.f-18 {
+  font-size: 18px;
 }
