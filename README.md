@@ -2,7 +2,7 @@
 
 ## _Follow the link to see deploy:_
 
-[Main page](https://productive-balloon.surge.sh/)
+[Main page](https://smart-boot.surge.sh/)
 
 ## The following technologies were used:
 - HTML5
