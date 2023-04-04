@@ -4,7 +4,7 @@ const pug = require('gulp-pug');
 
 const buildSass = () => {
 	console.log('Компиляция Scss');
-	return src('app/scss/**/*.scss')
+	return src('app/scss/app.scss')
 	.pipe(sass())
 	.pipe(dest('build/styles/'));
 };

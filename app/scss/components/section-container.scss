@@ -1,0 +1,46 @@
+.section {
+	&-container {
+		padding: 100px 0;
+	}
+
+	&-head {
+		display: flex;
+		column-gap: 30px;
+
+		.img {
+			width: 578px;
+			vertical-align: middle;
+			filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+		}
+	}
+
+	&-title {
+		h2 {
+			margin-bottom: 30px;
+		}
+
+		&::before {
+			font-size: 1 1.5rem "Neucha", sans-serif;
+			color: $dark-50;
+			content: 'Когнитивные искажения';
+		}
+	}
+
+	&-content {
+		.content-title {
+			margin-top: 100px;
+			margin-bottom: 20px;
+			padding: 5px 10px;
+			font-size: 14px;
+			text-transform: uppercase;
+			color: $white;
+			background-color: $brown;
+		}
+	
+		.content-body {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 30px;
+		}
+	}
+}

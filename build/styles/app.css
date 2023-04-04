@@ -9972,6 +9972,41 @@ textarea.form-control-lg {
   color: #fff;
 }
 
+.section-container {
+  padding: 100px 0;
+}
+.section-head {
+  display: flex;
+  column-gap: 30px;
+}
+.section-head .img {
+  width: 578px;
+  vertical-align: middle;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+.section-title h2, .section-title .h2 {
+  margin-bottom: 30px;
+}
+.section-title::before {
+  font-size: 1 1.5rem "Neucha", sans-serif;
+  color: #908d8b;
+  content: "Когнитивные искажения";
+}
+.section-content .content-title {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #b09a81;
+}
+.section-content .content-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+
 body > *,
 p {
   margin: 0;
@@ -10080,6 +10115,21 @@ h4, .h4 {
   opacity: 0.1;
   z-index: 0;
   content: "";
+}
+
+.dark {
+  color: #fff;
+  background-color: #b09a81;
+}
+.dark .section-head {
+  flex-direction: row-reverse;
+}
+.dark .section-title::before {
+  color: #d7ccc0;
+}
+.dark .content-title {
+  color: #b09a81;
+  background-color: #fff;
 }
 
 .bg-primary-dark {
