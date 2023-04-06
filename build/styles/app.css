@@ -9926,14 +9926,21 @@ textarea.form-control-lg {
 
 .navigation {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   column-gap: 30px;
   row-gap: 20px;
   padding-top: 200px;
   padding-bottom: 100px;
 }
-.navigation > * {
-  max-width: 350px;
+@media (min-width: 768px) {
+  .navigation {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .navigation {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .navigation-card {
   padding: 1.5rem;
@@ -9941,21 +9948,45 @@ textarea.form-control-lg {
 }
 .navigation-card a {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 2rem;
   text-decoration: none;
 }
 .navigation-card a h3, .navigation-card a .h3 {
-  font-size: 64px;
+  font-size: calc(1.525rem + 3.3vw);
   line-height: 1;
   color: #42413c;
-  margin-bottom: 2.5rem;
+}
+@media (min-width: 1200px) {
+  .navigation-card a h3, .navigation-card a .h3 {
+    font-size: 4rem;
+  }
 }
 .navigation-card a h4, .navigation-card a .h4 {
   color: #fe8a02;
-  margin-bottom: 1rem;
 }
 .navigation-card a p {
+  flex: 0 0 100%;
   color: #2a2626;
+}
+@media (min-width: 768px) {
+  .navigation-card a {
+    flex-direction: column;
+  }
+  .navigation-card a h3, .navigation-card a .h3 {
+    margin-bottom: 1rem;
+  }
+  .navigation-card a h4, .navigation-card a .h4 {
+    margin-bottom: 0.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .navigation-card a h3, .navigation-card a .h3 {
+    margin-bottom: 2.5rem;
+  }
+  .navigation-card a h4, .navigation-card a .h4 {
+    margin-bottom: 1rem;
+  }
 }
 .navigation-card:hover {
   background-color: #fe8a02;
