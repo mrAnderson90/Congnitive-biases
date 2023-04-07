@@ -10121,20 +10121,18 @@ textarea.form-control-lg {
   margin-top: 60px;
   font-size: 14px;
 }
+.info > * {
+  text-align: center;
+}
 .info a {
   color: #1085c5;
+  white-space: nowrap;
 }
 
 body > *,
 p {
   margin: 0;
   padding: 0;
-}
-
-html,
-body,
-header {
-  height: 100%;
 }
 
 body {
@@ -10266,4 +10264,13 @@ h4, .h4 {
 
 .f-18 {
   font-size: 18px;
+}
+
+.gap {
+  gap: 3rem;
+}
+@media (min-width: 992px) {
+  .gap {
+    gap: 200px;
+  }
 }
