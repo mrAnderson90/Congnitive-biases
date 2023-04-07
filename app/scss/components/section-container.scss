@@ -8,13 +8,29 @@
 		column-gap: 30px;
 
 		.img {
-			width: 578px;
+			display: none;
 			vertical-align: middle;
 			filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+
+			@media(min-width: 992px) {
+				display: block;
+				
+				img {
+					width: 400px;
+				}
+			}
+
+			@media(min-width: 1200px) {
+				img {
+					width: 578px;
+				}
+			}
 		}
 	}
 
 	&-title {
+		text-align: center;
+
 		h2 {
 			margin-bottom: 30px;
 		}
@@ -39,8 +55,26 @@
 	
 		.content-body {
 			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			column-gap: 30px;
+			grid-template-columns: 1fr;
+			gap: 30px;
+
+			@media(min-width: 768px) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+	}
+
+	@media(min-width: 576px) {
+		
+	}
+
+	@media(min-width: 768px) {
+
+	}
+
+	@media(min-width: 992px) {
+		&-title {
+			text-align: left;
 		}
 	}
 }

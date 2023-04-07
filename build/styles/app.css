@@ -10009,9 +10009,25 @@ textarea.form-control-lg {
   column-gap: 30px;
 }
 .section-head .img {
-  width: 578px;
+  display: none;
   vertical-align: middle;
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+@media (min-width: 992px) {
+  .section-head .img {
+    display: block;
+  }
+  .section-head .img img {
+    width: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-head .img img {
+    width: 578px;
+  }
+}
+.section-title {
+  text-align: center;
 }
 .section-title h2, .section-title .h2 {
   margin-bottom: 30px;
@@ -10032,22 +10048,30 @@ textarea.form-control-lg {
 }
 .section-content .content-body {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 30px;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .section-content .content-body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .section-title {
+    text-align: left;
+  }
 }
 
 .subscribe {
   display: flex;
-  align-items: center;
-  column-gap: 122px;
+  flex-direction: column;
   padding: 0 55px;
 }
-.subscribe-title {
+.subscribe > * {
   flex: 1 1 50%;
-  margin: 55px 0;
 }
-.subscribe-form {
-  flex: 1 1 50%;
+.subscribe-title {
+  margin: 1.5rem 0;
 }
 .subscribe-form * {
   border-radius: 0;
@@ -10077,6 +10101,16 @@ textarea.form-control-lg {
 }
 .subscribe-rules a {
   color: inherit;
+}
+@media (min-width: 992px) {
+  .subscribe {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 122px;
+  }
+  .subscribe-title {
+    margin: 55px 0;
+  }
 }
 
 .info {

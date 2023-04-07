@@ -1,17 +1,17 @@
 .subscribe {
 	display: flex;
-	align-items: center;
-	column-gap: 122px;
+	flex-direction: column;
 	padding: 0 55px;
 
-	&-title {
+	& > * {
 		flex: 1 1 50%;
-		margin: 55px 0;
+	}
+
+	&-title {
+		margin: 1.5rem 0;
 	}
 
 	&-form {
-		flex: 1 1 50%;
-
 		* {
 			border-radius: 0;
 		}
@@ -45,6 +45,20 @@
 
 		a {
 			color: inherit;
+		}
+	}
+
+	@media(min-width: 768px) {
+
+	}
+
+	@media(min-width: 992px) {
+		flex-direction: row;
+		align-items: center;
+		column-gap: 122px;
+
+		&-title {
+			margin: 55px 0;
 		}
 	}
 }
