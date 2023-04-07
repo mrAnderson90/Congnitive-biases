@@ -1,64 +1,60 @@
 .subscribe {
-	display: flex;
-	flex-direction: column;
-	padding: 0 55px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 55px;
 
-	& > * {
-		flex: 1 1 50%;
-	}
+  & > * {
+    flex: 1 1 50%;
+  }
 
-	&-title {
-		margin: 1.5rem 0;
-	}
+  &-title {
+    margin: 1.5rem 0;
+  }
 
-	&-form {
-		* {
-			border-radius: 0;
-		}
+  &-form {
+    * {
+      border-radius: 0;
+    }
 
-		input {
-			padding: 0 15px;
-		}
-	}
+    input {
+      padding: 0 15px;
+    }
+  }
 
-	.send {
-		position: relative;
-		height: 50px;
-		width: 70px;
+  .send {
+    position: relative;
+    height: 50px;
+    width: 70px;
 
-		&::before {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			height: 1.5rem;
-			width: 1.5rem;
-			background-image: url('../images/send.svg');
-			background-repeat: no-repeat;
-			background-position: center;
-			transform: translate(-50%, -50%);
-			content: "";
-		}
-	}
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 1.5rem;
+      width: 1.5rem;
+      background-image: url("../images/send.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: translate(-50%, -50%);
+      content: "";
+    }
+  }
 
-	&-rules {
-		font-size: 12px;
+  &-rules {
+    font-size: 12px;
 
-		a {
-			color: inherit;
-		}
-	}
+    a {
+      color: inherit;
+    }
+  }
 
-	@media(min-width: 768px) {
+  @media (min-width: 992px) {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 122px;
 
-	}
-
-	@media(min-width: 992px) {
-		flex-direction: row;
-		align-items: center;
-		column-gap: 122px;
-
-		&-title {
-			margin: 55px 0;
-		}
-	}
+    &-title {
+      margin: 55px 0;
+    }
+  }
 }

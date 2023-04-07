@@ -9886,17 +9886,17 @@ textarea.form-control-lg {
 }
 @font-face {
   font-weight: 400;
-  font-family: "OpenSans";
+  font-family: OpenSans;
   src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
 }
 @font-face {
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: OpenSans;
   src: url("../fonts/OpenSans/OpenSans-Bold.ttf");
 }
 @font-face {
   font-weight: 400;
-  font-family: "Neucha";
+  font-family: Neucha;
   src: url("../fonts/Neucha/Neucha-Regular.ttf");
 }
 .video {
@@ -10137,7 +10137,7 @@ p {
 
 body {
   line-height: 1.6em;
-  font-family: "OpenSans", sans-serif;
+  font-family: OpenSans, sans-serif;
   color: #2a2626;
 }
 
@@ -10151,7 +10151,7 @@ h4,
   margin: 0;
   font-weight: 400;
   line-height: 1.2em;
-  font-family: "Neucha", cursive;
+  font-family: Neucha, cursive;
 }
 
 h1, .h1 {
@@ -10222,7 +10222,7 @@ h4, .h4 {
   z-index: 1;
   background-color: #f5f4f0;
 }
-.bg-main:before {
+.bg-main::before {
   position: absolute;
   width: 100%;
   height: 100%;

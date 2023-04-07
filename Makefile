@@ -2,8 +2,7 @@ install:
 	npm install
 
 lint:
-	npx stylelint ./app/styles/*.css
-	npx stylelint ./app/styles/**/*.scss
+	npx stylelint ./app/scss/**/*.scss
 	npx htmlhint ./app/*.html
 
 sass:

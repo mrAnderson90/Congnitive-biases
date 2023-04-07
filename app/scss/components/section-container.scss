@@ -1,80 +1,72 @@
 .section {
-	&-container {
-		padding: 100px 0;
-	}
+  &-container {
+    padding: 100px 0;
+  }
 
-	&-head {
-		display: flex;
-		column-gap: 30px;
+  &-head {
+    display: flex;
+    column-gap: 30px;
 
-		.img {
-			display: none;
-			vertical-align: middle;
-			filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+    .img {
+      display: none;
+      vertical-align: middle;
+      filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 
-			@media(min-width: 992px) {
-				display: block;
-				
-				img {
-					width: 400px;
-				}
-			}
+      @media (min-width: 992px) {
+        display: block;
 
-			@media(min-width: 1200px) {
-				img {
-					width: 578px;
-				}
-			}
-		}
-	}
+        img {
+          width: 400px;
+        }
+      }
 
-	&-title {
-		text-align: center;
+      @media (min-width: 1200px) {
+        img {
+          width: 578px;
+        }
+      }
+    }
+  }
 
-		h2 {
-			margin-bottom: 30px;
-		}
+  &-title {
+    text-align: center;
 
-		&::before {
-			font-size: 1 1.5rem "Neucha", sans-serif;
-			color: $dark-50;
-			content: 'Когнитивные искажения';
-		}
-	}
+    h2 {
+      margin-bottom: 30px;
+    }
 
-	&-content {
-		.content-title {
-			margin-top: 100px;
-			margin-bottom: 20px;
-			padding: 5px 10px;
-			font-size: 14px;
-			text-transform: uppercase;
-			color: $white;
-			background-color: $brown;
-		}
-	
-		.content-body {
-			display: grid;
-			grid-template-columns: 1fr;
-			gap: 30px;
+    &::before {
+      font-size: 1 1.5rem "Neucha", sans-serif;
+      color: $dark-50;
+      content: "Когнитивные искажения";
+    }
+  }
 
-			@media(min-width: 768px) {
-				grid-template-columns: repeat(2, 1fr);
-			}
-		}
-	}
+  &-content {
+    .content-title {
+      margin-top: 100px;
+      margin-bottom: 20px;
+      padding: 5px 10px;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $white;
+      background-color: $brown;
+    }
 
-	@media(min-width: 576px) {
-		
-	}
+    .content-body {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
 
-	@media(min-width: 768px) {
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
 
-	}
-
-	@media(min-width: 992px) {
-		&-title {
-			text-align: left;
-		}
-	}
+  @media (min-width: 992px) {
+    &-title {
+      text-align: left;
+    }
+  }
 }

@@ -1,84 +1,83 @@
 .navigation {
-	display: grid;
-	grid-template-columns: 1fr;
-	column-gap: 30px;
-	row-gap: 20px;
-	padding-top: 200px;
-	padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 30px;
+  row-gap: 20px;
+  padding-top: 200px;
+  padding-bottom: 100px;
 
-	@media (min-width: 768px) {
-		grid-template-columns: repeat(2, 1fr);
-	}
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-	@media (min-width: 992px) {
-		grid-template-columns: repeat(3, 1fr);
-	}
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-	&-card {
-		padding: 1.5rem;
-		background-color: $bright;
+  &-card {
+    padding: 1.5rem;
+    background-color: $bright;
 
-		a {
-			display: flex;
-			flex-wrap: wrap;
-			column-gap: 2rem;
-			text-decoration: none;
-	
-			h3 {
-				@include font-size(4rem);
-				line-height: 1;
-				color: $primary-dark;
-			}
+    a {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 2rem;
+      text-decoration: none;
 
-			h4 {
-				color: $primary;
-			}
-	
-			p {
-				flex: 0 0 100%;
-				color: $dark;
-			}
+      h3 {
+        @include font-size(4rem);
+        line-height: 1;
+        color: $primary-dark;
+      }
 
-			@media (min-width: 768px) {
-				flex-direction: column;
+      h4 {
+        color: $primary;
+      }
 
-				h3 {
-					margin-bottom: 1rem;
-				}
-		
-				h4 {
-					margin-bottom: 0.5rem;
-				}
-			}
+      p {
+        flex: 0 0 100%;
+        color: $dark;
+      }
 
-			@media (min-width: 1200px) {
-				h3 {
-					margin-bottom: 2.5rem;
-				}
+      @media (min-width: 768px) {
+        flex-direction: column;
 
-				h4 {
-					margin-bottom: 1rem;
-				}
-			}
+        h3 {
+          margin-bottom: 1rem;
+        }
 
-		}
+        h4 {
+          margin-bottom: 0.5rem;
+        }
+      }
 
-		&:hover { 
-			background-color: $primary;
+      @media (min-width: 1200px) {
+        h3 {
+          margin-bottom: 2.5rem;
+        }
 
-			a {
-				h3 {
-					color: $white;
-				}
+        h4 {
+          margin-bottom: 1rem;
+        }
+      }
+    }
 
-				h4 {
-					color: $white;
-				}
+    &:hover {
+      background-color: $primary;
 
-				p {
-					color: $white;
-				}
-			}
-		}
-	}
+      a {
+        h3 {
+          color: $white;
+        }
+
+        h4 {
+          color: $white;
+        }
+
+        p {
+          color: $white;
+        }
+      }
+    }
+  }
 }
