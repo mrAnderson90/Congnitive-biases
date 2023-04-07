@@ -2,7 +2,7 @@
 
 ## _Follow the link to see deploy:_
 
-[Main page](https://smart-boot.surge.sh/)
+[Main page](https://kindly-way.surge.sh/)
 
 ## The following technologies were used:
 - HTML5
